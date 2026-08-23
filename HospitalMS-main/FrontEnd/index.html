@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management System</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; }
+        .container { text-align: center; background: white; padding: 50px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .btn { padding: 15px 30px; margin: 10px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer; }
+        .patient-btn { background: #007bff; color: white; }
+        .doctor-btn { background: #28a745; color: white; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Hospital Management System</h1>
+    <h3>Please Select Your Role</h3>
+
+    <button class="btn patient-btn" onclick="goToPatient()">Patient Management</button>
+    <button class="btn doctor-btn" onclick="goToDoctor()">Doctor Management</button>
+    <button class="btn doctor-btn" onclick="goToDoctor()">Doctor Management</button>
+    <button class="btn doctor-btn" onclick="goToDoctor()">Doctor Management</button>
+    <button class="btn doctor-btn" onclick="goToDoctor()">Doctor Management</button>
+    <button class="btn doctor-btn" onclick="goToDoctor()">Doctor Management</button>
+
+</div>
+
+<script>
+    function goToPatient(){
+        window.location.href = "patient.html"; // redirect
+    }
+
+    function goToDoctor(){
+        window.location.href = "doctor.html"; // redirect
+    }
+</script>
+</body>
+</html>
